@@ -1,12 +1,65 @@
-# React + Vite
+This React-based web application allows users to generate their personalized ticket for a coding conference. The form collects user details such as full name, email, GitHub username, and a profile image, then generates a digital ticket.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Upload your avatar (JPG or PNG).
 
-Currently, two official plugins are available:
+Enter your full name, email, and GitHub username.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instantly generate a custom conference ticket.
 
-## Expanding the ESLint configuration
+Clean and responsive UI using Tailwind CSS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖼️ Preview
+
+
+🛠️ Technologies Used
+React
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
+FileReader API
+
+📥 Installation
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ticket-generator.git
+cd ticket-generator
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Start the development server
+
+bash
+Copy
+Edit
+npm run dev
+🧾 Usage
+Fill in the form with your:
+
+Full name
+
+Email
+
+GitHub username
+
+Avatar image (PNG or JPG under 500KB)
+
+Click "Generate my ticket".
+
+A personalized ticket will be created and displayed (based on setTicket logic).
+
+📁 Code Overview
+Form.jsx: Contains the form and logic to capture and process user input.
+
+Utilizes FormData and FileReader to convert image input into base64 format.
+
+Calls setTicket with all form data and image encoded string.
+
